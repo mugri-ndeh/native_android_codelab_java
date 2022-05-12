@@ -4,10 +4,55 @@
     <string name="button_label_toast">Toast</string>
     <string name="button_label_count">Count</string>
     <string name="count_initial_value">0</string>
+    <string name="title_activity_code_lab3">CodeLab3</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="article_title">Flutter architecture</string>
+    <string name="article_subtitle"><b>Power Up Your Flutter Development Process by Implementing Clean Architecture and Test-Driven Development
+        The complete process to set up clean architecture in a Flutter codebase</b></string>
+    <string name="article_text">
 
 
+Since being released to the public on December 4, 2018, the application development ecosystem with Flutter has experienced very rapidly. Choosing Flutter as the SDK for developing products with fast iterations is the right choice. However, when choosing Flutter, developers should also start thinking about how to organize the state management of the app and how to design the app (behind the scenes) to be maintainable and scalable.
 
-    count_initial_value
+To address these concerns, we need to design the architecture of the application before starting to develop the features.
+\n<b>Clean Architecture</b>\n
+
+Architecture is very important in developing an application. Architecture can be likened to a floor plan that describes how the flow in an application project. The main purpose of implementing the architecture is the separation of concern (SoC). So, it will be easier if we can work by focusing on one thing at a time.
+
+In the context of Flutter, clean architecture will help us to separate code for business logic with code related to platforms such as UI, state management, and external data sources. In addition, the code that we write can be easier to test (testable) independently.
+       \n <b>Clean Architecture Diagram</b>\n
+
+As in the diagram above, the clean architecture is depicted as a pyramid or a slice of onion when viewed from the top. The clean architecture will divide the Flutter project into 3 main layers, namely:
+\n<b>Data and Platform layer</b>\n
+
+The data layer is located at the outermost layer. This layer consists of data source code such as consume Rest API, access to the local database, Firebase, or other sources. Also, on this layer, there is usually the platform code that builds up the UI (widgets).
+        \n<b>Presentation Layer</b>\n
+
+The presentation layer consists of the code to access the data of the app from a repository. Also, there is the code for state management such as providers, BLoC, and so on.
+       \n <b>Domain Layer</b>\n
+
+The domain layer is the deepest in the clean architecture. This layer contains the code for business logic applications such as entities and use cases.
+
+    Each layer depends on the other layers. The arrows on the diagram show how the layers are related. The outermost layer will depend on the inner layer and so on.
+
+The layer that does not depend on any other layers here is only the domain layer (independent) which is the code for the business logic. That way, the application is more adaptable and dynamic. For example, if we want to change the state management from the provider to BLoC, the migration process will not interfere with the existing business logic.
+\n<b>Test-Driven Development</b>\n
+
+In addition to implementing the clean architecture, to optimize the development process in terms of producing minimal bugs and reducing repetitive debugging and fixing processes, we must undergo a testing process.
+
+Test-Driven Development is an application development process where testing is the main character that drives the development. Testing code scenarios will be written first before creating a feature in the application.
+
+\nSee more at https://betterprogramming.pub/flutter-clean-architecture-test-driven-development-practical-guide-445f388e8604\n
+    </string>
+    <string name="next_lab">Next Lab</string>
+    <string name="add_comment">Add comment</string>
 
 
 </resources>

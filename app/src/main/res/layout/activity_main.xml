@@ -41,4 +41,15 @@
         android:layout_below="@+id/show_count"
         android:layout_centerHorizontal="true"
         android:onClick="countUp" />
+
+    <Button
+        android:id="@+id/lab_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/next_lab"
+        android:textColor="@color/black"
+        android:layout_below="@+id/button_count"
+        android:layout_centerHorizontal="true"
+        android:onClick="go_lab_3" />
 </RelativeLayout>

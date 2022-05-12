@@ -2,6 +2,7 @@ package com.example.counter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -28,5 +29,10 @@ public class MainActivity extends AppCompatActivity {
         if (mShowCount != null){
             mShowCount.setText(Integer.toString(mCount));
         }
+    }
+
+    public void go_lab_3(View view) {
+        Intent i = new Intent(getApplicationContext(),codelab3.class);
+        startActivity(i);
     }
 }
